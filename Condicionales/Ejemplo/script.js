@@ -1,11 +1,13 @@
  function identificarMayorEdad(){
+    let resultado = ""
     //Identificar si es mayor o menor de edad
     let edad = prompt("Por favoringrese su edad: ");
 
     if(edad >= 18){
-        alert(`Es mayor de edad, tiene: ${edad} años`);
+       resultado = `Es  mayor de edad, tiene: <h2>${edad}</h2>`
     }
     else{
-        alert(`Es menor  de edad, tiene: ${edad} años`);
+        resultado = `Es menor de edad, tiene: <h2>${edad}</h2>`
     }
+    document.getElementById('lista').innerHTML = resultado;
  }
