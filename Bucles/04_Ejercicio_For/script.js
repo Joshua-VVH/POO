@@ -8,6 +8,9 @@ function numeroMayor(){
         if(numMayor < num){
             numMayor = num;
         }
+        else{
+            numMayor = numMayor;
+        }
     }
     document.getElementById("lista").innerHTML = `De los números ingresados: ${arrayNum.join(", ")} <h2>Número mayor:</h2> <h1>${numMayor}</h1>`;
 }
