@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Contador de Cartas en Blackjack</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Contador de Cartas en Blackjack</h1>
+    <p>Ingresa una lista de cartas (separadas por comas) y haz clic en "Contar Carta" para ver el resultado.</p>
+    <input type="text" id="card-input" placeholder="Ingresa las cartas">
+    <button onclick="countCards(document.getElementById('card-input').value)">Contar Carta</button>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
